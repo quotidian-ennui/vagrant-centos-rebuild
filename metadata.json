@@ -1,0 +1,11 @@
+{
+    "name": "lewinc/centos7",
+    "versions": [{
+        "version": "1.0.0",
+        "status": "active",
+        "providers": [{
+            "name": "hyperv",
+            "url": "./package.box"
+        }]
+    }]
+}

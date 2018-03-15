@@ -1,0 +1,5 @@
+vm:
+  cpu: 2
+  memory: 2048
+  name: centos7
+  mac: 00-15-5D-48-53-11
