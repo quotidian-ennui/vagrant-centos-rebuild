@@ -7,8 +7,9 @@ if File.exist?("#{dir}/env.yml")
 end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "centos/7"
+  config.vm.box = "generic/centos8"
   config.vm.provider "hyperv"
+  config.vm.network "public_network", bridge: settings["vm"]["switch"]
 
   config.vm.provider "hyperv" do |hyperv|
     hyperv.vmname = settings["vm"]["name"]
@@ -17,6 +18,6 @@ Vagrant.configure(2) do |config|
     hyperv.cpus = settings["vm"]["cpu"]
   end
 
-  config.vm.provision "shell", path: "provision.sh"
+  config.vm.provision "shell", name: "baseline provisioning", path: "provision.sh"
 
 end

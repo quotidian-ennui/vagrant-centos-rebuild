@@ -1,7 +1,7 @@
 {
-    "name": "lewinc/centos7",
+    "name": "lewinc/centos8",
     "versions": [{
-        "version": "1905.01",
+        "version": "1912.12",
         "status": "active",
         "providers": [{
             "name": "hyperv",
