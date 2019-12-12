@@ -1,9 +1,9 @@
-# vagrant-centos7
+# vagrant-centos
 ` fantastic-octo-telegram` was the suggested name
 
 # What it is
 
-It's a hyper-v rebuild of the standard centos/7 image but adds cifs-utils so that you can mount your local dirs via SMB.
+It's a hyper-v rebuild of the standard generic/centos8 image but adds cifs-utils so that you can mount your local dirs via SMB; doesn't use centos/8 since it they aren't building it for Hyper-V
 
 # What to do
 - vagrant up
